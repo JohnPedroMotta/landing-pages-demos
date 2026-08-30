@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sites profissionais que ajudam sua empresa a vender mais. Conheça nossos modelos de sites demonstrados em nosso portfólio.">
+  <title>Agencia | Sites Profissionais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVEGAÇÃO ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="Agencia - Início">
+        <span class="logo__mark">A</span>
+        <span class="logo__text">gencia</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link active">Início</a></li>
+          <li><a href="#modelos" class="nav__link">Modelos</a></li>
+          <li><a href="#portifolio" class="nav__link">Portfólio</a></li>
+          <li><a href="#planos" class="nav__link">Planos</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <a href="#contato" class="btn btn--primary btn--sm header__cta">Solicitar orçamento</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO / APRESENTAÇÃO ===== -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="badge">Portfólio de modelos profissionais</span>
+          <h1 class="hero__title">
+            Sites que vendem, não apenas <span class="text-gradient">existem</span>.
+          </h1>
+          <p class="hero__subtitle">
+            Escolha um modelo pronto, personalizamos com a identidade da sua marca
+            e entregamos um site profissional, rápido e otimizado para conversão.
+          </p>
+          <div class="hero__actions">
+            <a href="#portifolio" class="btn btn--primary">Ver modelos</a>
+            <a href="#contato" class="btn btn--ghost">Falar com especialista</a>
+          </div>
+          <ul class="hero__stats">
+            <li><strong>+120</strong><span>Projetos entregues</span></li>
+            <li><strong>98%</strong><span>Clientes satisfeitos</span></li>
+            <li><strong>48h</strong><span>Entrega do modelo</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MODELOS / CATEGORIAS ===== -->
+    <section class="modelos section" id="modelos">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__label">Modelos disponíveis</span>
+          <h2 class="section__title">De qual tipo de site você precisa?</h2>
+          <p class="section__desc">Selecione a categoria e veja exemplos reais que já criamos.</p>
+        </div>
+
+        <div class="modelos__grid">
+          <article class="card modelos__card">
+            <div class="card__icon">🏪</div>
+            <h3 class="card__title">E-commerce</h3>
+            <p class="card__text">Lojas virtuais com checkout otimizado, carrinho e pagamentos integrados.</p>
+            <a href="#portifolio?cat=ecommerce" class="card__link">Ver exemplos →</a>
+          </article>
+
+          <article class="card modelos__card">
+            <div class="card__icon">💼</div>
+            <h3 class="card__title">Corporativo</h3>
+            <p class="card__text">Sites institucionais que transmitem credibilidade e fortalecem a marca.</p>
+            <a href="#portifolio?cat=corporativo" class="card__link">Ver exemplos →</a>
+          </article>
+
+          <article class="card modelos__card">
+            <div class="card__icon">🚀</div>
+            <h3 class="card__title">Landing Page</h3>
+            <p class="card__text">Páginas de alta conversão para campanhas, lançamentos e captura de leads.</p>
+            <a href="#portifolio?cat=landing" class="card__link">Ver exemplos →</a>
+          </article>
+
+          <article class="card modelos__card">
+            <div class="card__icon">✍️</div>
+            <h3 class="card__title">Portfólio Pessoal</h3>
+            <p class="card__text">Sites para freelancers, artistas e profissionais que querem se destacar.</p>
+            <a href="#portifolio?cat=portfolio" class="card__link">Ver exemplos →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFÓLIO ===== -->
+    <section class="portifolio section section--alt" id="portifolio">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__label">Trabalhos recentes</span>
+          <h2 class="section__title">Portfólio de modelos</h2>
+          <p class="section__desc">Exemplos prontos que você pode ter hoje, personalizados com sua marca.</p>
+        </div>
+
+        <div class="portifolio__filters" id="filterBar">
+          <button class="filter active" data-filter="todos">Todos</button>
+          <button class="filter" data-filter="ecommerce">E-commerce</button>
+          <button class="filter" data-filter="corporativo">Corporativo</button>
+          <button class="filter" data-filter="landing">Landing Page</button>
+          <button class="filter" data-filter="portfolio">Pessoal</button>
+        </div>
+
+        <div class="portifolio__grid" id="portfolioGrid">
+          <!-- Itens injetados via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PLANOS ===== -->
+    <section class="planos section" id="planos">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__label">Investimento</span>
+          <h2 class="section__title">Planos simples e transparentes</h2>
+          <p class="section__desc">Escolha o plano ideal para o seu momento. Sem mensalidade escondida.</p>
+        </div>
+
+        <div class="planos__grid">
+          <article class="plano">
+            <h3 class="plano__name">Essencial</h3>
+            <p class="plano__price"><span>R$</span> 499</p>
+            <p class="plano__period">pagamento único</p>
+            <ul class="plano__features">
+              <li>Modelo pré-pronto</li>
+              <li>Até 5 páginas</li>
+              <li>Responsivo (mobile)</li>
+              <li>Entrega em 48h</li>
+              <li>Suporte por 30 dias</li>
+            </ul>
+            <a href="#contato" class="btn btn--outline">Escolher plano</a>
+          </article>
+
+          <article class="plano plano--destaque">
+            <span class="plano__tag">Mais popular</span>
+            <h3 class="plano__name">Profissional</h3>
+            <p class="plano__price"><span>R$</span> 899</p>
+            <p class="plano__period">pagamento único</p>
+            <ul class="plano__features">
+              <li>Modelo personalizado</li>
+              <li>Até 10 páginas</li>
+              <li>Otimização SEO</li>
+              <li>Integração WhatsApp</li>
+              <li>Suporte por 90 dias</li>
+            </ul>
+            <a href="#contato" class="btn btn--primary">Escolher plano</a>
+          </article>
+
+          <article class="plano">
+            <h3 class="plano__name">E-commerce</h3>
+            <p class="plano__price"><span>R$</span> 1.499</p>
+            <p class="plano__period">pagamento único</p>
+            <ul class="plano__features">
+              <li>Loja virtual completa</li>
+              <li>Checkout integrado</li>
+              <li>Gestão de produtos</li>
+              <li>Painel administrativo</li>
+              <li>Suporte por 120 dias</li>
+            </ul>
+            <a href="#contato" class="btn btn--outline">Escolher plano</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROCESSO ===== -->
+    <section class="processo section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__label">Como funciona</span>
+          <h2 class="section__title">Do contato ao site no ar</h2>
+        </div>
+
+        <ol class="processo__list">
+          <li class="processo__item">
+            <span class="processo__num">01</span>
+            <h3>Escolha o modelo</h3>
+            <p>Navegue pelo portfólio e escolha o modelo que mais combina com sua marca.</p>
+          </li>
+          <li class="processo__item">
+            <span class="processo__num">02</span>
+            <h3>Personalizamos</h3>
+            <p>Adaptamos o design, textos, cores e imagens para a sua identidade.</p>
+          </li>
+          <li class="processo__item">
+            <span class="processo__num">03</span>
+            <h3>Publicamos</h3>
+            <p>Entregamos o site pronto, no ar e funcionando em até 48 horas.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== CTA FINAL ===== -->
+    <section class="cta section" id="contato">
+      <div class="container">
+        <div class="cta__box">
+          <h2 class="cta__title">Pronto para ter um site que vende?</h2>
+          <p class="cta__text">Conte sua ideia e receba uma proposta personalizada em até 24h.</p>
+          <form class="cta__form" id="contatoForm">
+            <input type="text" name="nome" placeholder="Seu nome" required aria-label="Seu nome">
+            <input type="email" name="email" placeholder="Seu e-mail" required aria-label="Seu e-mail">
+            <input type="text" name="modelo" placeholder="Qual modelo te interessou?" aria-label="Modelo de interesse">
+            <button type="submit" class="btn btn--primary">Quero meu orçamento</button>
+          </form>
+          <p class="cta__note" id="formNote" hidden>Recebemos sua mensagem! Retornaremos em breve.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#inicio" class="logo">
+        <span class="logo__mark">A</span>
+        <span class="logo__text">gencia</span>
+      </a>
+      <p class="footer__copy">© 2026 Agencia. Todos os direitos reservados.</p>
+      <ul class="footer__social">
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="#" aria-label="WhatsApp">WhatsApp</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/portfolio.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
