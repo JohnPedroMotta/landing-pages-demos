@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consultoria de gestão para pequenas empresas e MEIs. Organize suas finanças, processos e cresça com segurança.">
+  <title>GestãoPro | Consultoria para PMEs e MEIs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo"><span class="logo__mark">G</span><span class="logo__text">GestãoPro</span></a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#servicos" class="nav__link">Soluções</a></li>
+          <li><a href="#resultados" class="nav__link">Resultados</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="#contato" class="btn btn--primary btn--sm">Diagnóstico grátis</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="badge">Gestão para pequenos negócios</span>
+          <h1 class="hero__title">Organize seu negócio e <span class="text-gradient">cresça com segurança</span></h1>
+          <p class="hero__subtitle">
+            Finanças no lugar, processos definidos e decisões com base em dados.
+            Consultoria prática para PMEs e MEIs que querem sair do improviso.
+          </p>
+          <div class="hero__actions">
+            <a href="#contato" class="btn btn--primary btn--lg">Solicitar diagnóstico grátis</a>
+            <a href="#servicos" class="btn btn--ghost btn--lg">Ver soluções</a>
+          </div>
+        </div>
+        <div class="hero__visual"><div class="hero__visual-icon">📊</div></div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="servicos section" id="servicos">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__label">Soluções</span>
+          <h2 class="section__title">O que podemos fazer pelo seu negócio</h2>
+        </div>
+        <div class="servicos__grid">
+          <article class="servico"><div class="servico__icon">💰</div><h3>Gestão financeira</h3><p>Controle de fluxo de caixa, custos e precificação correta.</p></article>
+          <article class="servico"><div class="servico__icon">🗂️</div><h3>Organização de processos</h3><p>Padronize rotinas e aumente a produtividade da equipe.</p></article>
+          <article class="servico"><div class="servico__icon">📈</div><h3>Planejamento de crescimento</h3><p>Plano prático para alcançar seus objetivos de faturamento.</p></article>
+          <article class="servico"><div class="servico__icon">⚖️</div><h3>Regularização e MEI</h3><p>Orientação para manter seu negócio legal e em dia.</p></article>
+          <article class="servico"><div class="servico__icon">🤝</div><h3>Atendimento e vendas</h3><p>Melhore a captação e fidelização de clientes.</p></article>
+          <article class="servico"><div class="servico__icon">📉</div><h3>Redução de custos</h3><p>Identifique desperdícios e remunere cada real investido.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTADOS -->
+    <section class="resultados section section--alt" id="resultados">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__label">Números</span>
+          <h2 class="section__title">Resultados que geramos</h2>
+        </div>
+        <div class="resultados__grid">
+          <div><strong>+200</strong><span>empresas atendidas</span></div>
+          <div><strong>+35%</strong><span>faturamento médio no 1º ano</span></div>
+          <div><strong>92%</strong><span>de clientes continuam conosco</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="sobre section" id="sobre">
+      <div class="container sobre__inner">
+        <div class="sobre__media">👨‍💼</div>
+        <div class="sobre__info">
+          <span class="section__label">Quem somos</span>
+          <h2 class="section__title">Consultores que vivem o dia a dia da PME</h2>
+          <p class="sobre__text">Equipe especializada em gestão de pequenos negócios, com metodologia simples e linguagem acessível. Ajudamos você a tomar boas decisões com clareza e confiança.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contato section section--alt" id="contato">
+      <div class="container">
+        <div class="contato__box">
+          <h2 class="contato__title">Comece com um diagnóstico gratuito</h2>
+          <p class="contato__text">Deixe seus dados e descubra os pontos de melhoria do seu negócio.</p>
+          <form class="contato__form" id="contatoForm">
+            <input type="text" placeholder="Seu nome" required aria-label="Seu nome">
+            <input type="email" placeholder="Seu e-mail" required aria-label="Seu e-mail">
+            <select aria-label="Qual o nicho do seu negócio">
+              <option value="" disabled selected>Qual o nicho do seu negócio?</option>
+              <option>Comércio / Varejo</option>
+              <option>Serviços</option>
+              <option>Alimentação</option>
+              <option>Outro</option>
+            </select>
+            <button type="submit" class="btn btn--primary btn--block">Quero meu diagnóstico</button>
+          </form>
+          <p class="contato__note" id="formNote" hidden>Recebemos seu pedido! Entraremos em contato.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#inicio" class="logo"><span class="logo__mark">G</span><span class="logo__text">GestãoPro</span></a>
+      <p class="footer__copy">© 2026 GestãoPro. Todos os direitos reservados.</p>
+      <ul class="footer__social"><li><a href="#">LinkedIn</a></li><li><a href="#">Instagram</a></li></ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

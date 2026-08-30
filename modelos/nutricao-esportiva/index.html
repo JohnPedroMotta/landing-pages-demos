@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nutrição esportiva personalizada para melhorar performance, ganhar massa e definir. Agende sua avaliação.">
+  <title>NutriSport | Nutrição para Performance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo"><span class="logo__mark">⚡</span><span class="logo__text">NutriSport</span></a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li><a href="#planos" class="nav__link">Planos</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#agendamento" class="nav__link">Agendar</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="#agendamento" class="btn btn--primary btn--sm">Agendar avaliação</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="badge">Nutrição esportiva personalizada</span>
+          <h1 class="hero__title">Alimentação que <span class="text-accent">movimenta resultados</span></h1>
+          <p class="hero__subtitle">
+            Planos alimentares sob medida para ganhar massa, perder gordura ou melhorar
+            sua performance — alinhados ao seu treino e ao seu objetivo.
+          </p>
+          <div class="hero__actions">
+            <a href="#agendamento" class="btn btn--primary btn--lg">Agendar avaliação</a>
+            <a href="#planos" class="btn btn--ghost btn--lg">Ver planos</a>
+          </div>
+          <ul class="hero__stats">
+            <li><strong>+800</strong><span>atletas atendidos</span></li>
+            <li><strong>6k+</strong><span>planos montados</span></li>
+          </ul>
+        </div>
+        <div class="hero__visual"><div class="hero__visual-icon">🥗</div></div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="servicos section" id="servicos">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__label">O que ofereço</span>
+          <h2 class="section__title">Cuidado nutricional para cada objetivo</h2>
+        </div>
+        <div class="servicos__grid">
+          <article class="servico"><div class="servico__icon">💪</div><h3>Hipertrofia</h3><p>Plano para ganho de massa magra com bom aporte proteico.</p></article>
+          <article class="servico"><div class="servico__icon">🔥</div><h3>Emagrecimento</h3><p>Perda de gordura saudável, sem passar fome.</p></article>
+          <article class="servico"><div class="servico__icon">🏃</div><h3>Performance</h3><p>Nutrição para corredores, ciclistas e atletas.</p></article>
+          <article class="servico"><div class="servico__icon">🧬</div><h3>Reeducação</h3><p>Mudança de hábitos sustentável no longo prazo.</p></article>
+          <article class="servico"><div class="servico__icon">🍽️</div><h3>Cardápio individual</h3><p>Menu montado para sua rotina, gosto e orçamento.</p></article>
+          <article class="servico"><div class="servico__icon">📲</div><h3>Acompanhamento</h3><p>Suporte contínuo e ajustes ao longo do processo.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANOS -->
+    <section class="planos section section--alt" id="planos">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__label">Investimento</span>
+          <h2 class="section__title">Planos de acompanhamento</h2>
+        </div>
+        <div class="planos__grid">
+          <article class="plano">
+            <h3>Consulta única</h3>
+            <p class="plano__price">R$ 120</p>
+            <ul><li>Anamnese completa</li><li>Plano alimentar inicial</li><li>Orientações gerais</li></ul>
+            <a href="#agendamento" class="btn btn--outline">Agendar</a>
+          </article>
+          <article class="plano plano--destaque">
+            <span class="plano__tag">Mais procurado</span>
+            <h3>Mensal</h3>
+            <p class="plano__price">R$ 180<span>/mês</span></p>
+            <ul><li>Plano + reavaliações</li><li>Suporte por WhatsApp</li><li>Ajustes quinzenais</li><li>Cardápio detalhado</li></ul>
+            <a href="#agendamento" class="btn btn--primary">Começar agora</a>
+          </article>
+          <article class="plano">
+            <h3>Trimestral</h3>
+            <p class="plano__price">R$ 450</p>
+            <ul><li>3 meses de acompanhamento</li><li>Suporte prioritário</li><li>Reavaliação completa</li></ul>
+            <a href="#agendamento" class="btn btn--outline">Agendar</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="sobre section" id="sobre">
+      <div class="container sobre__inner">
+        <div class="sobre__media">👩‍⚕️</div>
+        <div class="sobre__info">
+          <span class="section__label">Quem sou</span>
+          <h2 class="section__title">Seu sucesso é a minha missão</h2>
+          <p class="sobre__text">Nutricionista esportiva com mais de 8 anos de experiência, acompanhando atletas amadores e profissionais. Acredito em planos realistas, gostosos e feitos para o seu dia a dia.</p>
+          <ul class="sobre__creds"><li>🎓 CRN ativo</li><li>🏅 Especialista em nutrição esportiva</li><li>📚 Pós-graduada em metabolismo</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- AGENDAMENTO -->
+    <section class="agendamento section section--alt" id="agendamento">
+      <div class="container">
+        <div class="agendamento__box">
+          <h2 class="agendamento__title">Agende sua avaliação</h2>
+          <p class="agendamento__text">Preencha seus dados e retornaremos para confirmar seu horário.</p>
+          <form class="agendamento__form" id="agendaForm">
+            <input type="text" placeholder="Seu nome" required aria-label="Seu nome">
+            <input type="tel" placeholder="Seu WhatsApp" required aria-label="Seu WhatsApp">
+            <select aria-label="Escolha um objetivo">
+              <option value="" disabled selected>Escolha seu objetivo</option>
+              <option>Hipertrofia</option>
+              <option>Emagrecimento</option>
+              <option>Performance</option>
+              <option>Reeducação alimentar</option>
+            </select>
+            <button type="submit" class="btn btn--primary btn--block">Solicitar agendamento</button>
+          </form>
+          <a href="#" class="agendamento__whats">ou chame no WhatsApp 💬</a>
+          <p class="agendamento__note" id="agendaNote" hidden>Recebemos seu pedido! Entraremos em contato.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#inicio" class="logo"><span class="logo__mark">⚡</span><span class="logo__text">NutriSport</span></a>
+      <p class="footer__copy">© 2026 NutriSport. Todos os direitos reservados.</p>
+      <ul class="footer__social"><li><a href="#">Instagram</a></li><li><a href="#">YouTube</a></li></ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
