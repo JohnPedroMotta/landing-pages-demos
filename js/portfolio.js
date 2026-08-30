@@ -19,14 +19,6 @@ const projetos = [
   },
   {
     id: 3,
-    titulo: 'SaaS TechFlow',
-    categoria: 'landing',
-    icone: '💻',
-    descricao: 'Landing page B2B para software, com foco em conversão e credibilidade.',
-    url: 'modelos/tech-saas/index.html',
-  },
-  {
-    id: 4,
     titulo: 'Curso Online SuaEscola',
     categoria: 'landing',
     icone: '🎓',
@@ -34,7 +26,7 @@ const projetos = [
     url: 'modelos/cursos-online/index.html',
   },
   {
-    id: 5,
+    id: 4,
     titulo: 'Clínica Beleza',
     categoria: 'corporativo',
     icone: '✨',
@@ -42,7 +34,7 @@ const projetos = [
     url: 'modelos/saude-estetica/index.html',
   },
   {
-    id: 6,
+    id: 5,
     titulo: 'Fotógrafo João Souza',
     categoria: 'portfolio',
     icone: '📸',
@@ -50,7 +42,7 @@ const projetos = [
     url: '#',
   },
   {
-    id: 7,
+    id: 6,
     titulo: 'Mercado Orgânico',
     categoria: 'ecommerce',
     icone: '🥬',
@@ -58,7 +50,7 @@ const projetos = [
     url: '#',
   },
   {
-    id: 8,
+    id: 7,
     titulo: 'Clínica Vida',
     categoria: 'corporativo',
     icone: '🏥',

@@ -4,8 +4,15 @@ Portfólio de demonstração dos modelos de sites profissionais que podemos cria
 
 Este repositório é destinado a integrar uma landing page que demonstra os modelos de sites profissionais oferecidos (para venda, etc.).
 
-## Stack planejada
+## Estrutura
 
-- Frontend: Vite + React (ou similar)
+- `index.html` + `css/` + `js/` — landing page principal (portfólio)
+- `modelos/` — landing pages por nicho, cada uma com sua própria estrutura:
+  - `cursos-online/` — cursos e treinamentos online
+  - `saude-estetica/` — saúde, estética e bem-estar
+
+## Stack
+
+- Frontend: HTML, CSS e JavaScript (estático, sem build)
 - Deploy: Vercel
-- Backend/Banco: Supabase
+- Backend/Banco: Supabase (a integrar nos formulários)
