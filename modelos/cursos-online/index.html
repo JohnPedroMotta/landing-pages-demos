@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curso online que leva você do zero à prática. Aprenda com quem já vive da área e conquiste seus resultados.">
+  <title>SuaEscola | Curso Online Profissional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo">
+        <span class="logo__mark">S</span>
+        <span class="logo__text">SuaEscola</span>
+      </a>
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#conteudo" class="nav__link">Conteúdo</a></li>
+          <li><a href="#instrutor" class="nav__link">Instrutor</a></li>
+          <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+          <li><a href="#matricula" class="nav__link">Matrícula</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <a href="#matricula" class="btn btn--primary btn--sm">Quero me matricular</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="badge">Curso 100% online e ao vivo</span>
+          <h1 class="hero__title">
+            Aprenda <span class="text-gradient">[Área/Tema]</span> e viva da sua capacidade
+          </h1>
+          <p class="hero__subtitle">
+            Um método passo a passo, direto ao ponto e com suporte real.
+            Ideal para quem está começando do zero ou quer se profissionalizar.
+          </p>
+
+          <ul class="hero__checks">
+            <li>✅ Mais de 40 horas de conteúdo prático</li>
+            <li>✅ Certificado de conclusão incluso</li>
+            <li>✅ Acesso vitalício e atualizações</li>
+            <li>✅ Suporte direto com o time</li>
+          </ul>
+
+          <div class="hero__actions">
+            <a href="#matricula" class="btn btn--primary btn--lg">Matricular agora</a>
+            <a href="#conteudo" class="btn btn--ghost btn--lg">Ver conteúdo do curso</a>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="hero__card-media">🎓</div>
+          <h3 class="hero__card-title">Do zero à prática em [X] semanas</h3>
+          <p class="hero__card-text">Garanta seu acesso agora com condições especiais de lançamento.</p>
+          <div class="hero__card-price">
+            <span class="old">de R$ 497</span>
+            <strong>por 12x R$ 29,90</strong>
+          </div>
+          <a href="#matricula" class="btn btn--primary btn--block">Assegurar minha vaga</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NÚMEROS -->
+    <section class="numeros">
+      <div class="container numeros__grid">
+        <div><strong>+5.000</strong><span>alunos formados</span></div>
+        <div><strong>4,9/5</strong><span>nota média no curso</span></div>
+        <div><strong>97%</strong><span>recomendam o curso</span></div>
+      </div>
+    </section>
+
+    <!-- PARA QUEM É -->
+    <section class="quem section" id="sobre">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__label">Para quem é?</span>
+          <h2 class="section__title">Esse curso é perfeito para você se...</h2>
+        </div>
+        <div class="quem__grid">
+          <div class="perfil">
+            <h3>🚀 Você é iniciante</h3>
+            <p>Nunca teve contato com o tema e quer um caminho claro do zero.</p>
+          </div>
+          <div class="perfil">
+            <h3>💼 Já trabalha na área</h3>
+            <p>Quer se profissionalizar, destravar resultados e ganhar mais.</p>
+          </div>
+          <div class="perfil">
+            <h3>🌈 Está em transição</h3>
+            <p>Quer mudar de carreira sem depender de diploma ou faculdade.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTEÚDO / MÓDULOS -->
+    <section class="conteudo section section--alt" id="conteudo">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__label">Conteúdo programático</span>
+          <h2 class="section__title">Estruturado em módulos claros</h2>
+          <p class="section__desc">Cada módulo te leva um passo adiante, sem enrolação.</p>
+        </div>
+
+        <div class="conteudo__list">
+          <details class="modulo" open>
+            <summary>
+              <span class="modulo__num">01</span>
+              <span class="modulo__nome">Fundamentos essenciais</span>
+              <span class="modulo__icon">+</span>
+            </summary>
+            <div class="modulo__body">
+              <p>Tudo o que você precisa saber para começar com o pé direito: conceitos, ferramentas e mentalidade.</p>
+            </div>
+          </details>
+
+          <details class="modulo">
+            <summary>
+              <span class="modulo__num">02</span>
+              <span class="modulo__nome">Mão na massa</span>
+              <span class="modulo__icon">+</span>
+            </summary>
+            <div class="modulo__body">
+              <p>Projetos práticos guiados passo a passo para fixar o aprendizado na prática.</p>
+            </div>
+          </details>
+
+          <details class="modulo">
+            <summary>
+              <span class="modulo__num">03</span>
+              <span class="modulo__nome">Avançado e cases reais</span>
+              <span class="modulo__icon">+</span>
+            </summary>
+            <div class="modulo__body">
+              <p>Aprofundamento com estudos de caso reais e técnicas avançadas do mercado.</p>
+            </div>
+          </details>
+
+          <details class="modulo">
+            <summary>
+              <span class="modulo__num">04</span>
+              <span class="modulo__nome">Mercado e monetização</span>
+              <span class="modulo__icon">+</span>
+            </summary>
+            <div class="modulo__body">
+              <p>Como se posicionar, atrair clientes e transformar conhecimento em renda.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTRUTOR -->
+    <section class="instrutor section" id="instrutor">
+      <div class="container instrutor__inner">
+        <div class="instrutor__media">👨‍🏫</div>
+        <div class="instrutor__info">
+          <span class="section__label">Quem vai te ensinar</span>
+          <h2 class="instrutor__name">Nome do Instrutor</h2>
+          <p class="instrutor__role">[Área] há 10+ anos · Especialista em [tema]</p>
+          <p class="instrutor__bio">
+            Breve biografia: trajetória, principais conquistas, para quem já trabalhou e
+            por que criou este curso. Um texto curto que gera autoridade e confiança.
+          </p>
+          <ul class="instrutor__creds">
+            <li>🏆 [Marco de destaque 1]</li>
+            <li>📈 [Marco de destaque 2]</li>
+            <li>🌎 [Marco de destaque 3]</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section class="depoimentos section section--alt" id="depoimentos">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__label">Depoimentos</span>
+          <h2 class="section__title">Resultados reais de alunos</h2>
+        </div>
+        <div class="depoimentos__grid">
+          <figure class="depoimento">
+            <div class="depoimento__stars">★★★★★</div>
+            <blockquote>"Comecei do absoluto zero e hoje já estou atendendo meus primeiros clientes. Valeu cada segundo."</blockquote>
+            <figcaption><strong>Aluno 1</strong><span>aluno da turma 2025</span></figcaption>
+          </figure>
+          <figure class="depoimento">
+            <div class="depoimento__stars">★★★★★</div>
+            <blockquote>"O método é direto ao ponto. Em 3 meses eu consegui o que tentava há 2 anos por conta própria."</blockquote>
+            <figcaption><strong>Aluno 2</strong><span>aluno da turma 2025</span></figcaption>
+          </figure>
+          <figure class="depoimento">
+            <div class="depoimento__stars">★★★★★</div>
+            <blockquote>"A didática e o suporte fazem toda a diferença. Me sinto acompanhado em cada etapa."</blockquote>
+            <figcaption><strong>Aluno 3</strong><span>aluno da turma 2024</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATRÍCULA = -->
+    <section class="matricula section" id="matricula">
+      <div class="container">
+        <div class="matricula__box">
+          <span class="badge badge--light">Oferta por tempo limitado</span>
+          <h2 class="matricula__title">Garanta sua vaga com desconto de lançamento</h2>
+          <div class="matricula__price">
+            <span class="old">De R$ 497</span>
+            <strong>12x de R$ 29,90</strong>
+            <span class="total">ou R$ 297 à vista</span>
+          </div>
+          <ul class="matricula__benefits">
+            <li>✔ Acesso completo a todos os módulos</li>
+            <li>✔ Certificado de conclusão</li>
+            <li>✔ Acesso vitalício + atualizações</li>
+            <li>✔ Garantia incondicional de 7 dias</li>
+          </ul>
+          <a href="#" class="btn btn--primary btn--lg btn--block">Quero me matricular agora</a>
+          <p class="matricula__secure">🔒 Compra segura · Acesso imediato após a confirmação</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#inicio" class="logo"><span class="logo__mark">S</span><span class="logo__text">SuaEscola</span></a>
+      <p class="footer__copy">© 2026 SuaEscola. Todos os direitos reservados.</p>
+      <ul class="footer__social">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">YouTube</a></li>
+        <li><a href="#">WhatsApp</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

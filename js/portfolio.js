@@ -1,4 +1,5 @@
-// Dados do portfólio (placeholder - preencher com projetos reais após)
+// Dados do portfólio
+// Cada projeto aponta para sua landing page de modelo em /modelos/<pasta>/index.html
 const projetos = [
   {
     id: 1,
@@ -6,6 +7,7 @@ const projetos = [
     categoria: 'ecommerce',
     icone: '👗',
     descricao: 'E-commerce completo com vitrine, carrinho e checkout integrado.',
+    url: '#',
   },
   {
     id: 2,
@@ -13,55 +15,62 @@ const projetos = [
     categoria: 'corporativo',
     icone: '🏗️',
     descricao: 'Site institucional com portfólio de obras e captação de contatos.',
+    url: '#',
   },
   {
     id: 3,
-    titulo: 'Lançamento Fitness',
+    titulo: 'SaaS TechFlow',
     categoria: 'landing',
-    icone: '💪',
-    descricao: 'Landing page de alta conversão para oferta de treinamento online.',
+    icone: '💻',
+    descricao: 'Landing page B2B para software, com foco em conversão e credibilidade.',
+    url: 'modelos/tech-saas/index.html',
   },
   {
     id: 4,
+    titulo: 'Curso Online SuaEscola',
+    categoria: 'landing',
+    icone: '🎓',
+    descricao: 'Landing page de infoproduto com módulos, oferta e matrícula.',
+    url: 'modelos/cursos-online/index.html',
+  },
+  {
+    id: 5,
+    titulo: 'Clínica Beleza',
+    categoria: 'corporativo',
+    icone: '✨',
+    descricao: 'Página de clínica de estética com serviços, resultados e agendamento.',
+    url: 'modelos/saude-estetica/index.html',
+  },
+  {
+    id: 6,
     titulo: 'Fotógrafo João Souza',
     categoria: 'portfolio',
     icone: '📸',
     descricao: 'Portfólio pessoal com galeria e área de contato para orçamentos.',
+    url: '#',
   },
   {
-    id: 5,
+    id: 7,
     titulo: 'Mercado Orgânico',
     categoria: 'ecommerce',
     icone: '🥬',
     descricao: 'Loja virtual de alimentos com sistema de assinatura mensal.',
+    url: '#',
   },
   {
-    id: 6,
+    id: 8,
     titulo: 'Clínica Vida',
     categoria: 'corporativo',
     icone: '🏥',
     descricao: 'Site médico com agendamento online e informações de especialidades.',
-  },
-  {
-    id: 7,
-    titulo: 'Curso de Inglês',
-    categoria: 'landing',
-    icone: '📚',
-    descricao: 'Página de captura de leads com vídeo de apresentação e matrícula.',
-  },
-  {
-    id: 8,
-    titulo: 'Desenvolvedor Front-end',
-    categoria: 'portfolio',
-    icone: '💻',
-    descricao: 'Portfólio pessoal apresentando projetos e habilidades técnicas.',
+    url: '#',
   },
 ];
 
 const grid = document.getElementById('portfolioGrid');
 const filterBar = document.getElementById('filterBar');
 
-// Redenriza os cards de portfólio
+// Renderiza os cards de portfólio
 function renderProjetos(categoria = 'todos') {
   const filtrados = categoria === 'todos'
     ? projetos
@@ -70,14 +79,15 @@ function renderProjetos(categoria = 'todos') {
   grid.innerHTML = filtrados
     .map(
       (p) => `
-      <article class="projeto" data-categoria="${p.categoria}">
+      <a href="${p.url}" class="projeto" data-categoria="${p.categoria}" aria-label="Ver modelo: ${p.titulo}">
         <div class="projeto__thumb"><span>${p.icone}</span></div>
         <div class="projeto__body">
           <span class="projeto__cat">${p.categoria}</span>
           <h3 class="projeto__title">${p.titulo}</h3>
           <p class="projeto__desc">${p.descricao}</p>
+          <span class="projeto__link">${p.url === '#' ? 'Em breve' : 'Ver modelo →'}</span>
         </div>
-      </article>
+      </a>
     `
     )
     .join('');
@@ -98,7 +108,7 @@ if (filterBar) {
   });
 }
 
-// Permite filtrar via links com ?cat= (ex: modelo de card)
+// Permite filtrar via links com ?cat=
 function aplicarFiltroDaURL() {
   const params = new URLSearchParams(window.location.hash.split('?')[1] || '');
   const cat = params.get('cat');
@@ -106,7 +116,6 @@ function aplicarFiltroDaURL() {
     const alvo = filterBar.querySelector(`[data-filter="${cat}"]`);
     if (alvo) {
       alvo.click();
-      // rola até a seção de portfólio
       document.getElementById('portifolio')?.scrollIntoView();
     }
   }
