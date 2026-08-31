@@ -1,11 +1,13 @@
 // Dados do portfólio
 // Cada projeto aponta para sua landing page de modelo em /modelos/<pasta>/index.html
+// cor1/cor2: cores do tema do modelo (usadas no thumbnail visual)
 const projetos = [
   {
     id: 1,
     titulo: 'Agência NEXO',
     categoria: 'landing',
-    icone: '🚀',
+    cor1: '#8b5cf6',
+    cor2: '#06b6d4',
     descricao: 'Agência digital: websites, design e marketing em uma página completa.',
     url: 'modelos/agencia-digital/index.html',
   },
@@ -13,7 +15,8 @@ const projetos = [
     id: 2,
     titulo: 'Nutrição Esportiva',
     categoria: 'landing',
-    icone: '🥗',
+    cor1: '#22c55e',
+    cor2: '#16a34a',
     descricao: 'Landing de nutricionista com serviços, planos e agendamento.',
     url: 'modelos/nutricao-esportiva/index.html',
   },
@@ -21,7 +24,8 @@ const projetos = [
     id: 3,
     titulo: 'Bem-Estar Mente Serena',
     categoria: 'landing',
-    icone: '🌿',
+    cor1: '#10b981',
+    cor2: '#84cc16',
     descricao: 'Saúde mental: abordagens, FAQ acolhedora e agendamento sigiloso.',
     url: 'modelos/bem-estar/index.html',
   },
@@ -29,7 +33,8 @@ const projetos = [
     id: 4,
     titulo: 'Consultoria GestãoPro',
     categoria: 'landing',
-    icone: '📊',
+    cor1: '#2563eb',
+    cor2: '#0ea5e9',
     descricao: 'Gestão para PMEs e MEIs: soluções, resultados e diagnóstico.',
     url: 'modelos/consultoria-gestao/index.html',
   },
@@ -37,7 +42,8 @@ const projetos = [
     id: 5,
     titulo: 'FinInvest',
     categoria: 'landing',
-    icone: '🌱',
+    cor1: '#f59e0b',
+    cor2: '#16a34a',
     descricao: 'Planejamento financeiro em 4 passos, com foco em confiança.',
     url: 'modelos/planejamento-financeiro/index.html',
   },
@@ -45,7 +51,8 @@ const projetos = [
     id: 6,
     titulo: 'Curso Online SuaEscola',
     categoria: 'landing',
-    icone: '🎓',
+    cor1: '#f59e0b',
+    cor2: '#7c3aed',
     descricao: 'Infoproduto: módulos, instrutor, oferta e matrícula.',
     url: 'modelos/cursos-online/index.html',
   },
@@ -53,7 +60,8 @@ const projetos = [
     id: 7,
     titulo: 'Clínica Beleza',
     categoria: 'corporativo',
-    icone: '✨',
+    cor1: '#ec4899',
+    cor2: '#14b8a6',
     descricao: 'Clínica de estética com serviços, resultados e agendamento.',
     url: 'modelos/saude-estetica/index.html',
   },
@@ -61,7 +69,8 @@ const projetos = [
     id: 8,
     titulo: 'Fotógrafo João Souza',
     categoria: 'portfolio',
-    icone: '📸',
+    cor1: '#6b7280',
+    cor2: '#111827',
     descricao: 'Portfólio pessoal com galeria e área de contato.',
     url: '#',
   },
@@ -69,6 +78,25 @@ const projetos = [
 
 const grid = document.getElementById('portfolioGrid');
 const filterBar = document.getElementById('filterBar');
+
+// Gera um thumbnail visual (mockup de navegador) usando as cores do modelo
+function thumbnail(p) {
+  return `
+    <div class="thumb__browser">
+      <div class="thumb__bar">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="thumb__body" style="background: linear-gradient(135deg, ${p.cor1} 0%, ${p.cor2} 100%)">
+        <div class="thumb__content">
+          <div class="thumb__titlebar"></div>
+          <div class="thumb__line"></div>
+          <div class="thumb__line short"></div>
+          <div class="thumb__btn"></div>
+        </div>
+      </div>
+    </div>
+  `;
+}
 
 // Renderiza os cards de portfólio
 function renderProjetos(categoria = 'todos') {
@@ -80,7 +108,7 @@ function renderProjetos(categoria = 'todos') {
     .map(
       (p) => `
       <a href="${p.url}" class="projeto" data-categoria="${p.categoria}" aria-label="Ver modelo: ${p.titulo}">
-        <div class="projeto__thumb"><span>${p.icone}</span></div>
+        <div class="projeto__thumb">${thumbnail(p)}</div>
         <div class="projeto__body">
           <span class="projeto__cat">${p.categoria}</span>
           <h3 class="projeto__title">${p.titulo}</h3>
